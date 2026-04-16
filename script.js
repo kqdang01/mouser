@@ -1,4 +1,4 @@
-const apiKey = "API_KEY_HERE".trim();
+const apiKey = "".trim();
 const TESTS = [
   {
     id: "happy_path",
