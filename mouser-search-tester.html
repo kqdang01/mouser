@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mouser Search API Tester</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Mouser Search API Test Suite</h1>
+    </header>
+    <div class="card">
+      <div class="card-label">Test Cases</div>
+      <div class="test-grid" id="testGrid"></div>
+
+      <div class="divider"></div>
+
+      <div class="run-controls">
+        <button id="runBtn" onclick="runSelectedTests()">▶ Run Selected Tests</button>
+        <button class="secondary" onclick="selectAll()">Select All</button>
+        <button class="secondary" onclick="clearLog()">Clear Log</button>
+      </div>
+
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="results-header">
+        <div class="card-label" style="margin:0">Test Output</div>
+        <div class="stat-row" id="statRow" style="display:none">
+          <div class="stat"><div class="stat-dot pass"></div><span id="passCount">0 passed</span></div>
+          <div class="stat"><div class="stat-dot fail"></div><span id="failCount">0 failed</span></div>
+          <div class="stat"><div class="stat-dot warn"></div><span id="warnCount">0 warnings</span></div>
+        </div>
+      </div>
+      <div class="log" id="logBox">
+      </div>
+      <div id="summaryBox"></div>
+    </div>
+  </div>
+</body>
+</html>
